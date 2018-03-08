@@ -5,6 +5,8 @@
  */
 namespace newx\console\base;
 
+require __DIR__ . 'AutoLoader.php';
+
 use newx\helpers\ArrayHelper;
 
 class Console
