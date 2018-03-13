@@ -1,11 +1,10 @@
 #!/usr/bin/env php
 <?php
 defined('VENDOR_PATH') or define('VENDOR_PATH', __DIR__ . '/../../');
-defined('APP_CONSOLE_PATH') or define('APP_CONSOLE_PATH', __DIR__ . '/../../../console');
 defined('VENDOR_CONSOLE_PATH') or define('VENDOR_CONSOLE_PATH', __DIR__);
-defined('VENDOR_ORM_PATH') or define('VENDOR_ORM_PATH', __DIR__ . '/../newx-orm');
+defined('APP_CONSOLE_PATH') or define('APP_CONSOLE_PATH', __DIR__ . '/../../../console');
 
-require VENDOR_PATH . '/autoload.php';
+require VENDOR_PATH . 'autoload.php';
 
 // 配置文件
 $config = require APP_CONSOLE_PATH . '/config/config.php';

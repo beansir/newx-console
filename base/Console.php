@@ -8,6 +8,7 @@ namespace newx\console\base;
 require __DIR__ . '/AutoLoader.php';
 
 use newx\helpers\ArrayHelper;
+use newx\orm\NewxOrm;
 
 class Console
 {
@@ -65,10 +66,8 @@ class Console
      */
     protected function loadOrm()
     {
-        require VENDOR_ORM_PATH . '/NewxOrm.php';
-
         $db = ArrayHelper::value($this->config, 'database');
-        \NewxOrm::run($db);
+        NewxOrm::load($db);
     }
 
 }
